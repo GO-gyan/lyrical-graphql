@@ -8,7 +8,7 @@ import LyricList from './LyricList';
 class SongDetail extends Component {
     render() {
         const { song, loading } = this.props.data;
-        if(loading) {
+        if(!song) {
             return <div>Loading..</div>;
         }
         return (
